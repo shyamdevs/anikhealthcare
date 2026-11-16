@@ -1,0 +1,953 @@
+* {
+  box-sizing: border-box;
+}
+
+.journey-section {
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 65px 30px 75px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.journey-header {
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+
+/* Badge */
+
+.journey-badge {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 8px 17px;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 30px;
+
+  background: #ffffff;
+
+  color: #475569;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.2px;
+}
+
+.journey-dot {
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: #2c3e50;
+
+  box-shadow: none;
+}
+
+
+/* Heading */
+
+.journey-header h1 {
+  margin: 22px 0 20px;
+
+  color: #111827;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 48px;
+
+  line-height: 1.05;
+
+  font-weight: 700;
+
+  letter-spacing: -1px;
+}
+
+.journey-header h1 span {
+  color: #111827;
+
+  font-style: normal;
+}
+
+.journey-header p {
+  max-width: 850px;
+
+  margin: 0 auto;
+
+  color: #64748b;
+
+  font-size: 15px;
+
+  line-height: 1.65;
+}
+
+.journey-header p strong {
+  color: #1e293b;
+}
+
+
+/* =========================================
+   STATS
+========================================= */
+
+.journey-stats {
+  width: 600px;
+
+  max-width: 100%;
+
+  min-height: 85px;
+
+  margin: 35px auto 75px;
+
+  padding: 12px 25px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 15px;
+
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.journey-stat {
+  flex: 1;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+}
+
+.journey-stat strong {
+  color: #111827;
+
+  font-size: 22px;
+
+  line-height: 1.2;
+
+  font-weight: 800;
+}
+
+.journey-stat span {
+  margin-top: 4px;
+
+  color: #64748b;
+
+  font-size: 11px;
+
+  font-weight: 500;
+}
+
+.journey-divider {
+  width: 1px;
+
+  height: 45px;
+
+  background: #e2e8f0;
+}
+
+
+/* =========================================
+   STEP NAVIGATION
+========================================= */
+
+.journey-navigation {
+  position: relative;
+
+  width: 100%;
+
+  max-width: 1120px;
+
+  margin: 0 auto 65px;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+}
+
+.journey-line {
+  position: absolute;
+
+  top: 22px;
+
+  left: 25px;
+
+  right: 25px;
+
+  height: 2px;
+
+  background: #f1f5f9;
+
+  z-index: 0;
+}
+
+
+.journey-step {
+  position: relative;
+
+  z-index: 2;
+
+  width: 80px;
+
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  cursor: pointer;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 9px;
+}
+
+
+.journey-number {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  border: 1.5px solid #fee2e2;
+
+  color: #64748b;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  transition: all 0.25s ease;
+}
+
+
+.journey-step.active .journey-number {
+  background: #2c3e50;
+
+  border-color: #2c3e50;
+
+  color: #ffffff;
+
+  box-shadow:
+    0 4px 14px rgba(44, 62, 80, 0.25);
+}
+
+
+.journey-short-title {
+  color: #64748b;
+
+  font-size: 11px;
+
+  font-weight: 500;
+
+  white-space: nowrap;
+}
+
+
+.journey-step.active .journey-short-title {
+  color: #111827;
+
+  font-weight: 700;
+}
+
+
+/* =========================================
+   CURRENT STEP
+========================================= */
+
+.current-step-row {
+  width: 100%;
+
+  max-width: 1160px;
+
+  margin: 0 auto 38px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+
+.current-step-badge {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 8px 16px;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 22px;
+
+  background: #ffffff;
+
+  color: #334155;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+.current-step-badge span {
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: #2c3e50;
+}
+
+
+/* Slider buttons */
+
+.slider-buttons {
+  display: flex;
+
+  gap: 10px;
+}
+
+.slider-buttons button {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  border: 1px solid #e2e8f0;
+
+  background: #ffffff;
+
+  color: #94a3b8;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  box-shadow: none;
+
+  transition: all 0.25s ease;
+}
+
+.slider-buttons button:last-child {
+  background: #2c3e50;
+
+  border-color: #2c3e50;
+
+  color: #ffffff;
+}
+
+.slider-buttons button:hover {
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   SLIDER
+========================================= */
+
+.journey-slider {
+  width: 100%;
+
+  max-width: 1160px;
+
+  margin: 0 auto;
+
+  overflow: hidden;
+}
+
+
+.journey-cards {
+  width: max-content;
+
+  display: flex;
+
+  align-items: stretch;
+
+  gap: 24px;
+
+  transition:
+    transform 0.4s ease;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.journey-card {
+  width: 705px;
+
+  min-height: 360px;
+
+  padding: 30px 35px 22px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.03);
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+/* Active */
+
+.active-card {
+  border-color: #d1b2b2;
+
+  box-shadow:
+    0 12px 32px rgba(0, 0, 0, 0.04);
+}
+
+
+/* Next card */
+
+.next-card {
+  width: 420px;
+
+  opacity: 0.96;
+}
+
+
+/* =========================================
+   CARD HEADER
+========================================= */
+
+.card-content {
+  position: relative;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+}
+
+
+.card-heading {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 13px;
+}
+
+
+.card-number {
+  width: 38px;
+  height: 38px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  background: #2c3e50;
+
+  color: #ffffff;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+
+.card-small-title {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #64748b;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+
+.card-heading h2 {
+  max-width: 430px;
+
+  margin: 0;
+
+  color: #111827;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 24px;
+
+  line-height: 1.25;
+
+  font-weight: 700;
+}
+
+
+/* Response */
+
+.response-badge {
+  max-width: 250px;
+
+  padding: 6px 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  border-radius: 20px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+
+  color: #475569;
+
+  font-size: 11px;
+
+  line-height: 1.25;
+
+  font-weight: 500;
+}
+
+.response-badge span {
+  font-size: 12px;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+.card-body {
+  margin-top: 23px;
+}
+
+.card-body h3 {
+  margin: 0 0 12px;
+
+  color: #475569;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+}
+
+.card-body p {
+  max-width: 610px;
+
+  margin: 0;
+
+  color: #4b5563;
+
+  font-size: 14.5px;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.card-footer {
+  margin-top: auto;
+
+  padding-top: 20px;
+
+  border-top: 1px solid #f1f5f9;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+}
+
+
+.card-tags {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  flex-wrap: wrap;
+}
+
+.card-tags span {
+  padding: 6px 12px;
+
+  border-radius: 6px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+
+  color: #475569;
+
+  font-size: 11px;
+
+  font-weight: 600;
+}
+
+.card-tags span:nth-child(2) {
+  background: #f8fafc;
+
+  color: #475569;
+}
+
+
+.card-footer button,
+.card-footer .card-action {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #2c3e50;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.card-footer button svg,
+.card-footer .card-action svg {
+  font-size: 10px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .journey-section {
+    padding: 50px 20px 60px;
+  }
+
+  .journey-header h1 {
+    font-size: 42px;
+  }
+
+  .journey-navigation {
+    overflow-x: auto;
+
+    justify-content: flex-start;
+
+    gap: 55px;
+
+    padding: 0 10px 10px;
+  }
+
+  .journey-line {
+    left: 30px;
+
+    width: 900px;
+
+    right: auto;
+  }
+
+  .journey-step {
+    flex-shrink: 0;
+  }
+
+  .journey-card {
+    width: 650px;
+  }
+
+  .next-card {
+    width: 350px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+  .journey-section {
+    padding: 38px 15px 50px;
+  }
+
+  .journey-badge {
+    font-size: 9px;
+
+    padding: 7px 11px;
+
+    letter-spacing: 0.6px;
+  }
+
+  .journey-header h1 {
+    font-size: 31px;
+
+    line-height: 1.1;
+
+    margin-top: 20px;
+  }
+
+  .journey-header p {
+    font-size: 13px;
+
+    line-height: 1.55;
+  }
+
+
+  /* Stats */
+
+  .journey-stats {
+    margin: 28px auto 50px;
+
+    padding: 10px;
+
+    min-height: 70px;
+  }
+
+  .journey-stat strong {
+    font-size: 16px;
+  }
+
+  .journey-stat span {
+    font-size: 9px;
+  }
+
+  .journey-divider {
+    height: 35px;
+  }
+
+
+  /* Navigation */
+
+  .journey-navigation {
+    gap: 30px;
+
+    margin-bottom: 40px;
+
+    overflow-x: auto;
+
+    scrollbar-width: none;
+  }
+
+  .journey-navigation::-webkit-scrollbar {
+    display: none;
+  }
+
+  .journey-number {
+    width: 39px;
+    height: 39px;
+
+    font-size: 11px;
+  }
+
+  .journey-short-title {
+    font-size: 9px;
+  }
+
+  .journey-line {
+    top: 19px;
+
+    left: 25px;
+
+    width: 700px;
+  }
+
+
+  /* Current */
+
+  .current-step-row {
+    margin-bottom: 25px;
+
+    align-items: flex-start;
+
+    gap: 15px;
+  }
+
+  .current-step-badge {
+    max-width: 250px;
+
+    font-size: 10px;
+
+    padding: 8px 11px;
+  }
+
+  .slider-buttons {
+    gap: 5px;
+  }
+
+  .slider-buttons button {
+    width: 38px;
+    height: 38px;
+
+    font-size: 11px;
+  }
+
+
+  /* Cards */
+
+  .journey-slider {
+    overflow: hidden;
+  }
+
+  .journey-cards {
+    gap: 15px;
+  }
+
+  .journey-card {
+    width: calc(100vw - 45px);
+
+    min-height: 390px;
+
+    padding: 22px 20px 18px;
+
+    border-radius: 17px;
+  }
+
+  .next-card {
+    width: calc(100vw - 100px);
+  }
+
+  .card-heading {
+    gap: 9px;
+  }
+
+  .card-number {
+    width: 35px;
+    height: 35px;
+
+    font-size: 11px;
+  }
+
+  .card-small-title {
+    font-size: 8px;
+
+    margin-bottom: 5px;
+  }
+
+  .card-heading h2 {
+    font-size: 19px;
+  }
+
+  .response-badge {
+    display: none;
+  }
+
+  .card-body {
+    margin-top: 25px;
+  }
+
+  .card-body h3 {
+    font-size: 11px;
+
+    margin-bottom: 10px;
+  }
+
+  .card-body p {
+    font-size: 13px;
+
+    line-height: 1.6;
+  }
+
+  .card-footer {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 12px;
+  }
+
+  .card-tags span {
+    font-size: 9px;
+
+    padding: 5px 8px;
+  }
+
+  .card-footer button {
+    font-size: 10px;
+  }
+}

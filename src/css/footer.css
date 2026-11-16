@@ -1,0 +1,1023 @@
+* {
+  box-sizing: border-box;
+}
+
+.footer {
+  width: 100%;
+  background: #ffffff;
+  color: #334155;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =====================================================
+   TOP HEADING
+===================================================== */
+
+.footer-heading {
+  text-align: center;
+  padding: 70px 20px 65px;
+  background: #ffffff;
+}
+
+.footer-badge {
+  display: inline-block;
+  padding: 6px 16px;
+
+  border-radius: 20px;
+
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  color: #475569;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.footer-heading h1 {
+  margin: 14px 0 12px;
+
+  color: #1a2836;
+
+  font-family: Georgia, 'Times New Roman', serif;
+
+  font-size: 38px;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+}
+
+.footer-heading p {
+  max-width: 700px;
+
+  margin: auto;
+
+  color: #64748b;
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/* =====================================================
+   DIVIDER (Slate Theme)
+===================================================== */
+
+.red-divider {
+  width: 100%;
+  height: 4px;
+  background: #2c3e50;
+}
+
+
+/* =====================================================
+   MAIN FOOTER
+===================================================== */
+
+.footer-main {
+  display: grid;
+
+  grid-template-columns:
+    1.6fr
+    0.9fr
+    0.9fr
+    1.5fr;
+
+  gap: 65px;
+
+  padding: 65px 55px 55px;
+
+  max-width: 1500px;
+
+  margin: auto;
+}
+
+
+/* =====================================================
+   COMPANY
+===================================================== */
+
+.company-logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.company-logo {
+  width: 66px;
+  height: 66px;
+
+  border: 1.5px solid #e2e8f0;
+
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #2c3e50;
+
+  font-family: Georgia, serif;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.company-logo-wrapper h2 {
+  margin: 0;
+
+  color: #111827;
+
+  font-family: Georgia, serif;
+
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+}
+
+.company-logo-wrapper h3 {
+  margin: 5px 0 0;
+
+  color: #64748b;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 11px;
+
+  letter-spacing: 0.8px;
+}
+
+
+.association {
+  display: inline-block;
+
+  margin-top: 10px;
+  margin-left: 81px;
+
+  padding: 5px 12px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 15px;
+
+  color: #475569;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+
+.company-description {
+  max-width: 410px;
+
+  margin-top: 24px;
+
+  color: #64748b;
+
+  font-size: 13.5px;
+
+  line-height: 1.6;
+}
+
+.company-description strong {
+  color: #111827;
+}
+
+
+.footer-company h4 {
+  margin-top: 25px;
+
+  color: #475569;
+
+  font-size: 11px;
+
+  letter-spacing: 0.8px;
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   SOCIAL
+===================================================== */
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+
+  margin-top: 15px;
+}
+
+.social-icons a {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 50%;
+
+  color: #475569;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: bold;
+
+  transition: all 0.25s ease;
+}
+
+.social-icons a:hover {
+  background: #2c3e50;
+  border-color: #2c3e50;
+  color: white;
+}
+
+
+/* =====================================================
+   FOOTER LINKS
+===================================================== */
+
+.footer-links h2,
+.footer-contact h2 {
+  position: relative;
+
+  margin: 0 0 25px;
+
+  padding-bottom: 12px;
+
+  color: #111827;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.footer-links h2::after,
+.footer-contact h2::after {
+  content: '';
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 25px;
+  height: 2px;
+
+  background: #2c3e50;
+}
+
+
+.footer-links ul {
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 15px;
+
+  padding-left: 12px;
+
+  position: relative;
+}
+
+.footer-links li::before {
+  content: '›';
+
+  position: absolute;
+
+  left: 0;
+
+  color: #94a3b8;
+
+  font-size: 16px;
+
+  top: -2px;
+}
+
+.footer-links a {
+  color: #64748b;
+
+  text-decoration: none;
+
+  font-size: 13.5px;
+
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: #2c3e50;
+}
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.appointment-box {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 14px 16px;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+}
+
+.phone-icon {
+  width: 38px;
+  height: 38px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  background: #2c3e50;
+
+  color: white;
+
+  font-size: 15px;
+}
+
+.appointment-box span {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #64748b;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.appointment-box strong {
+  display: flex;
+
+  gap: 10px;
+
+  color: #111827;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+.appointment-box b {
+  color: #cbd5e1;
+}
+
+
+.contact-row {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 12px 0;
+
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.contact-row span {
+  width: 26px;
+  height: 26px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f8fafc;
+
+  color: #475569;
+
+  border-radius: 6px;
+
+  font-size: 13px;
+}
+
+.contact-row p {
+  margin: 0;
+
+  color: #475569;
+
+  font-size: 13px;
+}
+
+
+.timing {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 14px;
+
+  color: #64748b;
+
+  font-size: 12px;
+}
+
+.timing p {
+  margin: 0;
+}
+
+.timing small {
+  margin-left: auto;
+
+  padding: 4px 8px;
+
+  background: #f0fdf4;
+
+  border: 1px solid #dcfce7;
+
+  color: #15803d;
+
+  border-radius: 20px;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+
+/* =====================================================
+   CLINICAL CENTRE
+===================================================== */
+
+.clinical-section {
+  max-width: 1500px;
+
+  margin: 5px auto 40px;
+
+  padding: 28px;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 12px;
+
+  display: grid;
+
+  grid-template-columns: 0.9fr 1.35fr;
+
+  gap: 35px;
+
+  background: #ffffff;
+
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
+}
+
+
+/* Clinical info */
+
+.clinical-info h2 {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin: 0 0 18px;
+
+  color: #111827;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.pin-icon {
+  width: 26px;
+  height: 26px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #2c3e50;
+
+  color: white;
+
+  border-radius: 6px;
+
+  font-size: 11px;
+}
+
+
+.address {
+  border-left: 2px solid #cbd5e1;
+
+  padding-left: 10px;
+}
+
+.address h3 {
+  margin: 0 0 4px;
+
+  color: #111827;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.address p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+
+/* Clinical contact */
+
+.clinical-contact {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 10px;
+
+  margin-top: 20px;
+}
+
+.clinical-contact div {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 10px 12px;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 8px;
+
+  color: #334155;
+
+  font-size: 11.5px;
+  background: #ffffff;
+}
+
+.clinical-contact span {
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+
+.landmark {
+  margin-top: 16px;
+
+  color: #64748b;
+
+  font-size: 11.5px;
+
+  line-height: 1.5;
+}
+
+
+/* =====================================================
+   MAP
+===================================================== */
+
+.map {
+  position: relative;
+
+  min-height: 260px;
+
+  overflow: hidden;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 10px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent 49%,
+      #e2e8f0 50%,
+      transparent 51%
+    ),
+    linear-gradient(
+      0deg,
+      transparent 49%,
+      #e2e8f0 50%,
+      transparent 51%
+    ),
+    #f8fafc;
+}
+
+
+/* Roads */
+
+.map-road {
+  position: absolute;
+
+  background: #e2e8f0;
+}
+
+.road-one {
+  width: 120%;
+  height: 14px;
+
+  left: -10%;
+  top: 51%;
+
+  transform: rotate(-2deg);
+}
+
+.road-two {
+  width: 12px;
+  height: 120%;
+
+  left: 43%;
+  top: -10%;
+
+  transform: rotate(-3deg);
+}
+
+.road-three {
+  width: 120%;
+  height: 9px;
+
+  left: -10%;
+  top: 72%;
+
+  transform: rotate(2deg);
+}
+
+
+/* Map button */
+
+.map-button {
+  position: absolute;
+
+  z-index: 5;
+
+  top: 15px;
+  left: 16px;
+
+  padding: 6px 12px;
+
+  background: white;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 6px;
+
+  color: #334155;
+
+  font-size: 11px;
+
+  text-decoration: none;
+
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+
+/* North */
+
+.north {
+  position: absolute;
+
+  z-index: 5;
+
+  top: 15px;
+  right: 15px;
+
+  padding: 6px 8px;
+
+  background: white;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 6px;
+
+  font-size: 10px;
+
+  color: #64748b;
+}
+
+
+/* Location */
+
+.map-location {
+  position: absolute;
+
+  left: 57%;
+  top: 49%;
+
+  transform: translate(-50%, -50%);
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.location-pin {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #2c3e50;
+
+  border: 3px solid white;
+
+  border-radius: 50%;
+
+  color: white;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+  font-size: 13px;
+}
+
+.location-label {
+  margin-top: 8px;
+
+  padding: 6px 16px;
+
+  background: white;
+
+  border-radius: 16px;
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+
+  text-align: center;
+
+  white-space: nowrap;
+}
+
+.location-label strong {
+  display: block;
+
+  color: #111827;
+
+  font-size: 11px;
+}
+
+.location-label span {
+  display: block;
+
+  margin-top: 2px;
+
+  color: #64748b;
+
+  font-size: 9.5px;
+}
+
+
+.road-label {
+  position: absolute;
+
+  bottom: 18px;
+  left: 30px;
+
+  color: #94a3b8;
+
+  font-size: 9px;
+
+  font-weight: bold;
+
+  letter-spacing: 0.8px;
+}
+
+
+/* =====================================================
+   BOTTOM FOOTER
+===================================================== */
+
+.footer-bottom {
+  max-width: 1500px;
+
+  margin: auto;
+
+  padding: 26px 0 25px;
+
+  border-top: 1px solid #f1f5f9;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 12px;
+}
+
+.footer-bottom strong {
+  color: #111827;
+}
+
+.pink-text {
+  color: #2c3e50 !important;
+}
+
+
+.bottom-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+.bottom-links a {
+  color: #64748b;
+
+  font-size: 12px;
+
+  text-decoration: none;
+}
+
+.bottom-links span {
+  color: #cbd5e1;
+}
+
+.bottom-links a:hover {
+  color: #2c3e50;
+}
+
+.bottom-links .back-top {
+  margin-left: 15px;
+
+  color: #2c3e50;
+
+  font-weight: bold;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1100px) {
+
+  .footer-main {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 45px;
+  }
+
+  .clinical-section {
+    grid-template-columns: 1fr;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .footer-bottom {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .footer-heading {
+    padding: 45px 20px;
+  }
+
+  .footer-heading h1 {
+    font-size: 25px;
+  }
+
+  .footer-heading p {
+    font-size: 13px;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr;
+
+    padding: 45px 25px;
+
+    gap: 40px;
+  }
+
+  .association {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .clinical-section {
+    margin: 10px 15px 30px;
+    padding: 20px;
+
+    grid-template-columns: 1fr;
+  }
+
+  .clinical-contact {
+    grid-template-columns: 1fr;
+  }
+
+  .map {
+    min-height: 230px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: 25px 15px;
+  }
+
+  .bottom-links {
+    flex-wrap: wrap;
+
+    gap: 12px;
+  }
+
+  .bottom-links .back-top {
+    margin-left: 0;
+  }
+
+  .appointment-box strong {
+    flex-wrap: wrap;
+    white-space: normal;
+  }
+
+}
+
+/* Contact note and accessible button-based back-to-top control */
+.social-contact-note {
+  max-width: 360px;
+  margin: 12px 0 0;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.social-contact-note a,
+.contact-row a,
+.clinical-contact a {
+  color: #475569;
+  text-decoration: none;
+}
+
+.social-contact-note a:hover,
+.contact-row a:hover,
+.clinical-contact a:hover {
+  color: #2c3e50;
+  text-decoration: underline;
+}
+
+.bottom-links button.back-top {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+}
+
+@media (max-width: 600px) {
+  .bottom-links {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
