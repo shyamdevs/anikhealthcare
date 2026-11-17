@@ -3,7 +3,7 @@ import Navbar from "../../Layout/Navbar";
 import Footer from "../../Layout/Footer";
 import doctorPortrait from "../../assets/gunjan 1.jpeg";
 import doctorAtDesk from "../../assets/g2.jpeg";
-import doctorAtDeskPortrait from "../../assets/g3.jpeg";
+// import doctorAtDeskPortrait from "../../assets/g3.jpeg";
 import clinicImage from "../../assets/modern_multi_storey_flagship_multispeciality_hospital_and_fertility_centre.png";
 import teamImage from "../../assets/professional_medical_team_portrait_of_senior_doctors_fertility_specialists_and.png";
 import labImage from "../../assets/state_of_the_art_cleanroom_ivf_laboratory_and_diagnostic_centre_embryologists.png";
@@ -17,7 +17,7 @@ const galleryImages = [
   { src: labImage, alt: "IVF laboratory and diagnostic facility", title: "Laboratory Facilities" },
   { src: doctorAtDesk, alt: "Doctor at the clinic desk", title: "At the Clinic" },
   { src: facilityImage, alt: "Operating theatre and critical care facility", title: "Clinical Facilities" },
-  { src: doctorAtDeskPortrait, alt: "Doctor at the clinic", title: "Consultation Space" },
+  // { src: doctorAtDeskPortrait, alt: "Doctor at the clinic", title: "Consultation Space" },
 ];
 
 function Gallery() {

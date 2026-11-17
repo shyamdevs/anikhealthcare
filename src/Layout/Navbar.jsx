@@ -72,7 +72,7 @@ const Navbar = () => {
           <Link to="/" onClick={closeMobileMenu} className="flex items-center gap-3">
             <div className="flex h-14 w-14 items-center justify-center overflow-hidden rounded-full border border-gray-200 sm:h-[70px] sm:w-[98px]">
               <img
-                className="h-full w-full rounded-full object-cover"
+                className="h-full w-full rounded-full object-contain"
                 src={aik}
                 alt="Anik Healthcare logo"
               />

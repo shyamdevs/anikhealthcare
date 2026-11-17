@@ -47,7 +47,7 @@ function Gunjan () {
             {/* Heading */}
             <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-extrabold text-[#1a2836] leading-[1.2] tracking-tight mb-6">
               Meet Dr. Gunjan Agarwal –<br />
-              Best IVF Doctor in Jaipur
+               IVF Doctor in Jaipur
             </h2>
 
             {/* Paragraphs */}
@@ -55,7 +55,7 @@ function Gunjan () {
               <p>
                 Dr. Gunjan Agarwal is recognized as one of the{" "}
                 <strong className="text-[#1a2836] font-bold">
-                  best IVF and infertility specialists in Jaipur
+                   IVF and infertility specialists in Jaipur
                 </strong>{" "}
                 and a pioneering name in reproductive medicine. With more than{" "}
                 <strong className="text-[#1a2836] font-bold">
